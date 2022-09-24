@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>1679616</title></head>
+    <body style="background-color:#bee6c8">
+        <h1 class="goal">1679616</h1>
+        <p class="description">merge 6 tiles and get to 1679616 tile!</p>
+        <div id="board"><div class="tile n1">1</div><div class="tile n6">6</div><div class="tile n36">36</div><div class="tile n216">216</div><div class="tile n1296">1296</div><div class="tile n7776">7776</div><div class="tile n46656">46656</div><div class="tile n279936">279936</div><div class="tile n1679616">1679616</div><div class="tile n10077696">10077696</div><div class="tile n60466176">60466176</div></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><div class="description">press f12 plz i beg u</div>
+    </body>
+    <style>
+        @font-face {font-family: "font";src: url("ClearSans-Regular.ttf");}
+        .goal {font-family: "font";font-weight: 800;}
+        .description {font-family: "font";font-weight: 500;}
+        #board {width: 750px;height: 750px;background-color: #cdc1b4;border: 6px solid #bbada0;display: flex;flex-wrap: wrap;}
+        .tile {width: 50px;height: 50px;border: 5px solid #bbada0;font-weight: 700;display: flex;justify-content: center;align-items: center;}
+        .n1 {font-family: "font";background-color: #faf8ef;color: #727272;font-size: 18px;}
+        .n6 {font-family: "font";background-color: #d6e7da;color: #727272;font-size: 17.66666666666666666666666666666666666666666667px;}
+        .n36 {font-family: "font";background-color: #bee6c8;color: #727272;font-size: 17.33333333333333333333333333333333333333333334px;}
+        .n216 {font-family: "font";background-color: #a9c879;color: #727272;font-size: 17px;}
+        .n1296 {font-family: "font";background-color: #93BF63;color: #727272;font-size: 16.5px;}
+        .n7776 {font-family: "font";background-color: #7BBE5F;color: #727272;font-size: 16px;}
+        .n46656 {font-family: "font";background-color: #62BF3B;color: #727272;font-size: 15px;}
+        .n279936 {font-family: "font";background-color: #47F172;color: #727272;font-size: 13.5px;}
+        .n1679616 {font-family: "font";background-color: #2FF561;color: #727272;font-size: 12px;}
+        .n10077696 {font-family: "font";background-color: #18FA50;color: #727272;font-size: 10.5px;}
+        .n60466176 {font-family: "font";background-color: #00FF3F;color: #727272;font-size: 8px;}
+    </style>
+    <script>
+        var board;var rows = 15;var columns = 15
+        console.log("broken game bc cannot read properties of undefined (reading '0')")
+        board = [[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]; for (let r = 0; r < rows; r++) {for (let c = 0; c < columns; c++){let tile = document.createElement("div");tile.id = r.toString() + "-" + c.toString();let num = board[r][c]; updateTile(tile, num); document.getElementById("board").append(tile)}}
+        function updateTile(tile, num) {tile.innerText = "";tile.classList.value = ""; tile.classList.add("tile"); if(num > 0){tile.innerText = num; if(num <= 10077696){tile.classList.add("n" + num.toString())}else{tile.classList.add("n60466176")}}}
+    </script>
+</html>
